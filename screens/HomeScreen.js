@@ -59,24 +59,24 @@ const HomeScreen = () => {
       </View>
 
       {/* Body */}
-      <ScrollView className="bg-gray-100">
+      <ScrollView
+        className="bg-gray-100"
+        contentContainerStyle={{ paddingBottom: 100 }}
+      >
         {/* Categories */}
         <Categories />
-
         {/* Featured */}
         <FeaturedRow
           id="1"
           title="Featured"
           description="Paid placements from our partners"
         />
-
         {/* Tasty Discounts */}
         <FeaturedRow
           id="2"
           title="Tasty Discounts"
           description="Everyone's been enjoying these juicy discounts!"
         />
-
         {/* Offers near you */}
         <FeaturedRow
           id="3"
